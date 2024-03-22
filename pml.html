@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSC Pallavaram</title>
+      <style>
+        .b{
+    display: inline-block;
+    margin-top: 5px;
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Green */
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+        }
+
+        .b:hover{
+            background-color: #45a0F9; /* BLUE */
+        }
+    </style>
+
+</head>
+<body>
+    <script>
+        function sendloc(){
+            var num = document.getElementById("n").value;
+            var url = "https://wa.me/91"+num+"?text=Hi";
+            var url2 = "https://api.whatsapp.com/send/?phone=91"+num+"&text=Visit CSC Pallavaram%0ATo Collect SAT Model QA Paper%0APh 9710434343%0A%0Ahttps://maps.app.goo.gl/HZ26dvr6FvHpn12H7";
+
+// Open the URL in a new window or tab
+//window.open(url, "_blank");
+// Open the URL in a new window or tab
+window.open(url2, "_blank");
+        }
+    </script>
+    <h1>Send Location for CSC Pallavaram</h1>
+    <p>Student WhatsApp Number: </p>
+    <input type="number" name="n" id="n">
+   <a href="javascript:sendloc()" class="b">Send Location</a>
+</body>
+</html>
