@@ -3,7 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CSC Pallavaram</title>
+    <style>
+        .b{
+            display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Green */
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+        }
+
+        .b:hover{
+            background-color: #45a049; /* Darker green */
+        }
+    </style>
 
 </head>
 <body>
@@ -11,7 +30,7 @@
         function sendloc(){
             var num = document.getElementById("n").value;
             var url = "https://wa.me/91"+num+"?text=Hi";
-            var url2 = "https://api.whatsapp.com/send/?phone=91"+num+"&text=Visit CSC PALLAVARAM%0ATO Collect Model QA Paper%0Ahttps://maps.app.goo.gl/HZ26dvr6FvHpn12H7";
+            var url2 = "https://api.whatsapp.com/send/?phone=91"+num+"&text=Visit CSC PALLAVARAM%0ATO Collect Model QA Paper%0APH 9710434343%0A%0Ahttps://maps.app.goo.gl/HZ26dvr6FvHpn12H7";
 
 // Open the URL in a new window or tab
 //window.open(url, "_blank");
@@ -19,10 +38,10 @@
 window.open(url2, "_blank");
         }
     </script>
-    <h1>PVM</h1>
-    <p>WhatsApp Number: </p>
+    <h1>Send Location for CSC Pallavaram</h1>
+    <p>Student WhatsApp Number: </p>
     <input type="number" name="n" id="n">
-    <div class="button float-left">
+    <div class="b">
         <a href="javascript:sendloc()" class="main-btn">Send Location</a>
     </div>
 </body>
