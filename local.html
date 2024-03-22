@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <script>
+        function sendloc(){
+            var num = document.getElementById("n").value;
+            var url = "https://wa.me/91"+num+"?text=Hi";
+            var url2 = "https://api.whatsapp.com/send/?phone=919884237623&text=Hi&type=phone_number&app_absent=0";
+
+// Open the URL in a new window or tab
+//window.open(url, "_blank");
+// Open the URL in a new window or tab
+window.open(url2, "_blank");
+        }
+    </script>
+    <h1>PVM</h1>
+    <p>WhatsApp Number: </p>
+    <input type="number" name="n" id="n">
+    <div class="button float-left">
+        <a href="javascript:sendloc()" class="main-btn">Send Location</a>
+    </div>
+</body>
+</html>
